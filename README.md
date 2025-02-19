@@ -41,6 +41,13 @@ Para saber que esta dentro do ambiente virtual, verificar no inicio da linha de 
 
 https://docs.djangoproject.com/pt-br/5.1/intro/tutorial02/#creating-an-admin-user
 
+10) Criar um usuario para acessar a area de administração
+    python manage.py createsuperuser
+    admin   admin@admin.com    123    (usuario e-mail pwd ...)
 
+11) Para que o objeto Question apareca na pagina de adminstração, precisamos informar
+    admin.py >> from .models import Question >> admin.site.register(Question)
+
+https://docs.djangoproject.com/pt-br/5.1/intro/tutorial03/#writing-more-views
 
 
